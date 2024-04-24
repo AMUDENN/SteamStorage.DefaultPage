@@ -1,0 +1,102 @@
+.main-content {
+    width: 100%;
+    height: 100%;
+}
+
+.guide {
+    flex-direction: row;
+    justify-content: end;
+}
+
+.guide-section {
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.guide-container {
+    grid-template-columns: 1fr 3fr;
+}
+
+.guide-navigation {
+    position: sticky;
+    top: 0;
+    align-self: baseline;
+}
+
+.guide-navigation nav {
+    margin-top: 20px;
+}
+
+.guide-navigation a {
+    align-self: center;
+    color: var(--fg-color-second);
+    word-wrap: break-word;
+    text-decoration: none;
+}
+
+.guide-navigation a:hover {
+    color: var(--accent-color);
+}
+
+.first-level-ul li {
+    margin-bottom: 5px;
+    color: var(--fg-color-second);
+    font-size: var(--small-text);
+}
+
+.second-level-ul li {
+    margin-left: 7px;
+    margin-bottom: 3px;
+    font-size: var(--small-text);
+}
+
+.guide-text {
+    font-size: var(--small-text);
+    margin-left: 20px;
+}
+
+.guide-text h1 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.guide-text h3 {
+    text-indent: 10px;
+    font-weight: 550;
+    margin-bottom: 15px;
+}
+
+.guide-text div {
+    margin-bottom: 15px;
+}
+
+.guide-text p {
+    margin-bottom: 5px;
+    text-indent: 10px;
+}
+
+table, th, td {
+    border: 1px solid var(--fg-color-second);
+    font-size: var(--little-text);
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td {
+    padding: 0 5px 5px 5px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .guide-container{
+        grid-template-columns: 1fr;
+    }
+    .guide-navigation {
+        display: none;
+    }
+}

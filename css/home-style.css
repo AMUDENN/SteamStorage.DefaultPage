@@ -1,0 +1,23 @@
+.main-content {
+    width: 100%;
+    height: 100%;
+}
+
+.home-page-section {
+    width: 60%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.home-page-section p {
+    margin-bottom: 30px;
+    font-size: var(--middle-text);
+}
+
+
+@media screen and (max-width: 1150px) {
+    .home-page-section{
+        width: 80%;
+    }
+}

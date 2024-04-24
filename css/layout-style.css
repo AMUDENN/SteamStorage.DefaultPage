@@ -1,0 +1,99 @@
+.layout-page-content {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 60px 1fr 60px;
+    background: var(--bg-color-first);
+}
+
+.header, .footer, .main-content {
+    width: 100%;
+    height: 100%;
+}
+
+.header, .footer {
+    padding: 0 6%;
+    background: var(--bg-color-second);
+    flex-direction: row;
+    align-items: center;
+}
+
+.left-header, .right-header, .left-footer, .right-footer {
+    width: 30%;
+}
+
+.center-header, .center-footer {
+    width: 40%;
+}
+
+.left-header, .right-header, .left-footer, .right-footer, .center-header, .center-footer {
+    height: 100%;
+    align-items: center;
+}
+
+.left-header {
+    flex-direction: row;
+    justify-content: start;
+}
+
+.left-header svg {
+    height: 50%;
+    margin-right: 15px;
+    fill: var(--fg-color-first);
+}
+
+.left-header a {
+    text-decoration: none;
+}
+
+.left-header a:hover {
+    text-decoration: underline;
+}
+
+.center-header div.menu {
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center-header div.menu a {
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.center-header div.menu a:hover {
+    text-decoration: underline;
+}
+
+.center-header div.menu a.active {
+    border-bottom: 2px solid var(--accent-color);
+    border-radius: 8px 8px 0 0;
+}
+
+.center-header div.menu a.active:hover {
+    text-decoration: none;
+}
+
+.page-iframe {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    border: 0;
+}
+
+.right-footer p {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 930px) {
+    .left-header, .right-header {
+        display: none;
+    }
+    .center-header {
+        width: 100%;
+    }
+    .center-header div.menu {
+        justify-content: space-around;
+    }
+}
