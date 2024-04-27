@@ -87,10 +87,10 @@
 
 
 @media screen and (max-width: 930px) {
-    .left-header, .right-header {
+    .left-header, .right-header, .left-footer, .center-footer {
         display: none;
     }
-    .center-header {
+    .center-header, .right-footer {
         width: 100%;
     }
     .center-header div.menu {
