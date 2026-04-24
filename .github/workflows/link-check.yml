@@ -23,7 +23,6 @@ jobs:
           args: |
             --verbose
             --no-progress
-            --exclude-mail
             --exclude 'localhost'
             --exclude 'http://localhost'
             --timeout 20
