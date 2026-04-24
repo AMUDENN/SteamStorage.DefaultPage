@@ -1,4 +1,4 @@
-# SteamStorage — DefaultPage
+# SteamStorage.DefaultPage
 
 The official landing page for the [SteamStorage](https://github.com/AMUDENN/SteamStorage) project ecosystem.
 A static web application serving as the entry point for users and developers — featuring an overview of the platform,
